@@ -1,105 +1,169 @@
 {
-    "ingredientes": {
-      "paes": [
-        {
-          "id": 1,
-          "tipo": "Italiano Branco"
-        },
-        {
-          "id": 2,
-          "tipo": "3 Queijos"
-        },
-        {
-          "id": 3,
-          "tipo": "Parmesão e Orégano"
-        },
-        {
-          "id": 4,
-          "tipo": "Integral"
-        }
-      ],
-      "carnes": [
-        {
-          "id": 1,
-          "tipo": "Maminha"
-        },
-        {
-          "id": 2,
-          "tipo": "Alcatra"
-        },
-        {
-          "id": 3,
-          "tipo": "Picanha"
-        },
-        {
-          "id": 4,
-          "tipo": "Veggie burger"
-        }
-      ],
-      "opcionais": [
-        {
-          "id": 1,
-          "tipo": "Bacon"
-        },
-        {
-          "id": 2,
-          "tipo": "Cheddar"
-        },
-        {
-          "id": 3,
-          "tipo": "Salame"
-        },
-        {
-          "id": 4,
-          "tipo": "Tomate"
-        },
-        {
-          "id": 4,
-          "tipo": "Cebola roxa"
-        },
-        {
-          "id": 4,
-          "tipo": "Pepino"
-        }
-      ]
-    },
-    "status": [
+  "ingredientes": {
+    "paes": [
       {
         "id": 1,
-        "tipo": "Solicitado"
+        "tipo": "Italiano Branco"
       },
       {
         "id": 2,
-        "tipo": "Em produção"
+        "tipo": "3 Queijos"
       },
       {
         "id": 3,
-        "tipo": "Finalizado"
-      }
-    ],
-    "burgers": [
-      {
-        "nome": "Matheus Battisti",
-        "carne": "Picanha",
-        "pao": "Italiano Branco",
-        "opcionais": [
-          "Bacon",
-          "Salame",
-          "Cebola roxa"
-        ],
-        "status": "Finalizado",
-        "id": 1
+        "tipo": "Parmesão e Orégano"
       },
       {
-        "nome": "João Coelho",
-        "carne": "Maminha",
-        "pao": "3 Queijos",
-        "opcionais": [
-          "Salame",
-          "Cebola roxa"
-        ],
-        "status": "Solicitado",
-        "id": 4
+        "id": 4,
+        "tipo": "Integral"
+      }
+    ],
+    "carnes": [
+      {
+        "id": 1,
+        "tipo": "Maminha"
+      },
+      {
+        "id": 2,
+        "tipo": "Alcatra"
+      },
+      {
+        "id": 3,
+        "tipo": "Picanha"
+      },
+      {
+        "id": 4,
+        "tipo": "Veggie burger"
+      }
+    ],
+    "opcionais": [
+      {
+        "id": 1,
+        "tipo": "Bacon"
+      },
+      {
+        "id": 2,
+        "tipo": "Cheddar"
+      },
+      {
+        "id": 3,
+        "tipo": "Salame"
+      },
+      {
+        "id": 4,
+        "tipo": "Tomate"
+      },
+      {
+        "id": 4,
+        "tipo": "Cebola roxa"
+      },
+      {
+        "id": 4,
+        "tipo": "Pepino"
       }
     ]
-  }
+  },
+  "status": [
+    {
+      "id": "1",
+      "tipo": "Solicitado"
+    },
+    {
+      "id": "2",
+      "tipo": "Em produção"
+    },
+    {
+      "id": "3",
+      "tipo": "Finalizado"
+    }
+  ],
+  "burgers": [
+    {
+      "id": "f2cc",
+      "nome": "Alan",
+      "carne": "Maminha",
+      "pao": "Italiano Branco",
+      "opicionais": [
+        "Bacon",
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitato"
+    },
+    {
+      "id": "0d8a",
+      "nome": "Alan",
+      "carne": "Maminha",
+      "pao": "Italiano Branco",
+      "opicionais": [
+        "Bacon",
+        "Cebola roxa"
+      ],
+      "status": "Solicitato"
+    },
+    {
+      "id": "991a",
+      "nome": "Alan",
+      "carne": "Maminha",
+      "pao": "Italiano Branco",
+      "opicionais": [
+        "Bacon",
+        "Cheddar"
+      ],
+      "status": "Solicitato"
+    },
+    {
+      "id": "1ea8",
+      "nome": "Alan",
+      "carne": "Maminha",
+      "pao": "3 Queijos",
+      "opicionais": [
+        "Bacon",
+        "Salame",
+        "Cebola roxa"
+      ],
+      "status": "Solicitato"
+    },
+    {
+      "id": "9a08",
+      "nome": "Alan",
+      "carne": "Maminha",
+      "pao": "3 Queijos",
+      "opicionais": [
+        "Bacon",
+        "Cebola roxa"
+      ],
+      "status": "Solicitato"
+    },
+    {
+      "id": "2b20",
+      "nome": "Alan",
+      "carne": "Maminha",
+      "pao": "Italiano Branco",
+      "opicionais": [
+        "Bacon"
+      ],
+      "status": "Solicitato"
+    },
+    {
+      "id": "16e4",
+      "nome": "Alan",
+      "carne": "Maminha",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Bacon"
+      ],
+      "status": "Solicitato"
+    },
+    {
+      "id": "c669",
+      "nome": "Alan",
+      "carne": "Maminha",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Bacon"
+      ],
+      "status": "Solicitato"
+    }
+  ]
+}

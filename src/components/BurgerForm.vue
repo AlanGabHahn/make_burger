@@ -1,8 +1,8 @@
 <template>
     <div>
-        <p>Componente de mensagem</p>
+        <Message :msg="msg" v-show="msg" />
         <div>
-            <form id="burger-form" @submit="createBurger">
+            <form id="burger-form" method="POST" @submit="createBurger">
                 <div class="input-container">
                     <label for="nome">Nome do cliente:</label>
                     <input type="text" name="nome" id="nome" v-model="nome" placeholder="Digite seu nome">
@@ -27,13 +27,13 @@
                 </div>
                 <div id="opcionais-container" class="input-container">
                     <label id="opcionais-title" for="opcionais">Selecione os opcionais:</label>
-                    <div class="checkbox-container" v-for="opcional in opcionaisData" :key="opcional.id">
+                    <div class="checkbox-container" v-for="opcional in opcionaisdata" :key="opcional.id">
                         <input type="checkbox" name="opcionais" v-model="opcionais" :value="opcional.tipo">
                         <span>{{ opcional.tipo }}</span>
                     </div>
-                    <div class="input-container">
-                        <input type="submit" value="Criar meu Burger!" class="submit-btn">
-                    </div>
+                </div>
+                <div class="input-container">
+                    <input type="submit" value="Criar meu Burger!" class="submit-btn">
                 </div>
             </form>
         </div>
@@ -41,13 +41,15 @@
 </template>
 
 <script>
+import Message from './Message.vue'
+
 export default {
     name: "BurgerForm",
     data() {
         return {
             paes: null,
             carnes: null,
-            opcionaisData: null,
+            opcionaisdata: null,
             nome: null,
             pao: null, 
             carne: null,
@@ -61,7 +63,7 @@ export default {
             const data = await req.json();
             this.paes = data.paes;
             this.carnes = data.carnes;
-            this.opcionaisData = data.opcionais;
+            this.opcionaisdata = data.opcionais;
         },
         async createBurger(e) {
             e.preventDefault();
@@ -69,7 +71,7 @@ export default {
                 nome: this.nome,
                 carne: this.carne,
                 pao: this.pao,
-                opicionais: Array.from(this.opcionais),
+                opcionais: Array.from(this.opcionais),
                 status: "Solicitato"
             }
             const dataJson = JSON.stringify(data);
@@ -79,18 +81,21 @@ export default {
                 body: dataJson
             });
             const res = await req.json();
-
-            // colocar uma msg de sistema
+            this.msg = `Pedido Nº ${res.id} realizado com sucesso`
+            setTimeout(() => this.msg = "", 3000);
 
             // limpar os dados
-            this.nome = '';
-            this.carne = '';
-            this.pao = '';
-            this.opcionais = "";
+            this.nome = "";
+            this.carne = "";
+            this.pao = "";
+            this.opcionais = [];
         }
     },
     mounted() {
         this.getIngredientes();
+    },
+    components: {
+        Message
     }
 }
 </script>
