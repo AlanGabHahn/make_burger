@@ -83,8 +83,6 @@ export default {
             const res = await req.json();
             this.msg = `Pedido Nº ${res.id} realizado com sucesso`
             setTimeout(() => this.msg = "", 3000);
-
-            // limpar os dados
             this.nome = "";
             this.carne = "";
             this.pao = "";
