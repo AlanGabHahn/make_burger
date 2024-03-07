@@ -39,7 +39,7 @@ Este é um projeto de uma hamburgueria feito em Vue.js com JSON Server para simu
 4. Inicie o servidor Vue.js.
 
     ```
-    npm run serve
+    npm backend serve
     ```
 
 5. Abra seu navegador e acesse [http://localhost:8080](http://localhost:8080).
