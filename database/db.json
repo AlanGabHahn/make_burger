@@ -88,7 +88,7 @@
         "Cheddar",
         "Tomate"
       ],
-      "status": "Solicitado"
+      "status": "Em produção"
     },
     {
       "id": "5",
@@ -99,17 +99,7 @@
         "Bacon",
         "Cebola roxa"
       ],
-      "status": "Em produção"
-    },
-    {
-      "id": "8",
-      "nome": "Alan",
-      "carne": "Maminha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Solicitado"
+      "status": "Finalizado"
     }
   ]
 }
