@@ -72,7 +72,7 @@ export default {
                 carne: this.carne,
                 pao: this.pao,
                 opcionais: Array.from(this.opcionais),
-                status: "Solicitato"
+                status: "Solicitado"
             }
             const dataJson = JSON.stringify(data);
             const req = await fetch("http://localhost:3000/burgers", {
